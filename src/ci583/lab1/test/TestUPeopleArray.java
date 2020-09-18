@@ -20,6 +20,13 @@ public class TestUPeopleArray {
 	}
 
 	@Test
+	public void testEmpty() {
+		a = new UnorderedPeopleArray(MAX);
+		Person p2 = a.find(p.getLastName());
+		assertNull(p2);
+	}
+
+	@Test
 	public void testFind() {
 		a.clear();
 		insertP();
@@ -33,13 +40,7 @@ public class TestUPeopleArray {
 		for(int i=0;i<MAX;i++) {
 			a.insert(p.getFirstName(), p.getLastName()+i, p.getAge());
 		}
-		try {
-			insertP();
-		} catch (ArrayIndexOutOfBoundsException e){
-			assertEquals(1,1);
-			return;
-		}
-		assertEquals(1,0);
+		assertEquals(insertP(), false);
 	}
 
 	@Test
@@ -57,8 +58,8 @@ public class TestUPeopleArray {
 		assertEquals(p.toString(), a.find(p.getLastName()).toString());
 	}
 	
-	private void insertP() {
-		a.insert(p.getFirstName(), p.getLastName(), p.getAge());
+	private boolean insertP() {
+		return a.insert(p.getFirstName(), p.getLastName(), p.getAge());
 	}
 	
 	@Test
