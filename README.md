@@ -82,4 +82,7 @@ only need to loop that far.
    7. Returning to the `clear` method, if your implementation loops through the array then there's a
    much more efficient way to do it, which has constant time complexity (O(1)). Hint: think about
    how the various loops you have written use `nElems`.
+   
+   Solutions to these problems are stored in a branch of the repository called `solution`. You can view it
+   on the github website or by checking out the branch.
  

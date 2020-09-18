@@ -15,13 +15,7 @@ public class UnorderedPeopleArray extends PeopleArray {
 	 * @param age
 	 */
 	public boolean insert(String first, String last, int age) {
-		if(nElems == arr.length) {
-			return false;
-		}
-		Person p = new Person(first, last, age);
-		arr[nElems] = p;
-		nElems++;
-		return true;
+		throw new UnsupportedOperationException("Method not implemented");
 	}
 
 	/**
@@ -30,13 +24,7 @@ public class UnorderedPeopleArray extends PeopleArray {
 	 * @return
 	 */
 	public Person find(String lastName) {
-		for(int i = 0; i< nElems; i++) {
-			Person p = arr[i];
-			if (p.getLastName().equals(lastName)) {
-				return p;
-			}
-		}
-		return null;
+		throw new UnsupportedOperationException("Method not implemented");
 	}
 
 }

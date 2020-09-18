@@ -14,7 +14,7 @@ public abstract class PeopleArray {
 	 * Reset the array
 	 */
 	public void clear() {
-		nElems = 0;
+		throw new UnsupportedOperationException("Method not implemented");
 	}
 
 	/**
@@ -25,17 +25,7 @@ public abstract class PeopleArray {
 	 * @return
 	 */
 	public boolean delete(String lastName) {
-		for (int i=0; i< nElems; i++) {
-			Person p = arr[i];
-			if(p.getLastName().equals(lastName)) {
-				for(int j=i; j<nElems;j++) {
-					arr[j] = arr[j+1];
-				}
-				nElems--;
-				return true;
-			}
-		}
-		return false;
+		throw new UnsupportedOperationException("Method not implemented");
 	}
 	
 	/**
