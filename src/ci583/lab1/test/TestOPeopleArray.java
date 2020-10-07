@@ -1,14 +1,14 @@
 package ci583.lab1.test;
 
+import ci583.lab1.arrays.OrderedPeopleArray;
+import ci583.lab1.arrays.Person;
 import org.junit.Before;
 import org.junit.Test;
 
-import ci583.lab1.arrays.OrderedPeopleArray;
-import ci583.lab1.arrays.Person;
-
 import java.util.Random;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 public class TestOPeopleArray {
 	

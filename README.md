@@ -8,6 +8,16 @@ Read the source code of the classes in the project. The project provides two col
 are intended to store `Person` objects. The `PeopleArray` class is the *superclass* of `UnorderedPeopleArray`
 and `OrderedPeopleArray`.
 
+The code comes with *unit tests* in the `test` package, which you can run to check your work. The
+ way that you run these depends on the IDE that you're using. The first thing you need to do
+  is to add the JUnit library to the project. After that it is usually as
+ simple as right-clicking on the test and selecting the option to run it -- ask
+ for help with this in the labs or google the procedure for your IDE. (For example, in Intellij 
+ you need to click on *File / Project Structure* then *Libraries*. Then click on the 
+ `+` button and select *From Maven*. Type "junit" into the search box and select one of 
+ the results. Now you have added the JUnit library to the project you can right-click 
+ on a test class and select *Run*.)
+
 `PeopleArray` has two fields, `arr` and `nElems`, both of which are inherited
 by its subclasses. `arr` is a Java array, and this is
 where we will store the `Person` objects. `nElems` is a counter for the number of
