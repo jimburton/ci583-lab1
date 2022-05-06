@@ -27,17 +27,17 @@ public class Person {
     
     public String toString() {
     	return new Formatter().format("Last name: %s,  first name: %s, age: %d", 
-    			getLastName(), firstName, age).toString();
+				      getLastName(), firstName, age).toString();
     }
 	
-	public boolean equals(Object o) {
-		if(!(o instanceof Person)) return false;
-		Person that = (Person) o;
-		return (firstName.equals(that.getFirstName()) 
-				&& lastName.equals(that.getLastName()) 
-				&& age == that.getAge());
-	}
-    
+    public boolean equals(Object o) {
+	if(!(o instanceof Person)) return false;
+	Person that = (Person) o;
+	return (firstName.equals(that.getFirstName()) 
+		&& lastName.equals(that.getLastName()) 
+		&& age == that.getAge());
+    }
+
 }
 
 
