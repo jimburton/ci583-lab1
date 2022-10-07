@@ -8,7 +8,7 @@ public class OrderedPeopleArray extends PeopleArray {
 
 	/**
 	 * Insert a new person maintaining the order of the data.
-	 * Throw ArrayIndexOutOfBoundsException if arr is full
+	 * Return false if arr is full.
 	 * @param first
 	 * @param last
 	 * @param age
