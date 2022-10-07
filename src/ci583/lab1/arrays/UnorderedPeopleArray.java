@@ -9,7 +9,7 @@ public class UnorderedPeopleArray extends PeopleArray {
 
 	/**
 	 * Insert a new person to the end of the array.
-	 * Throw ArrayIndexOutOfBoundsException if arr is full
+	 * Return false if arr is full.
 	 * @param first
 	 * @param last
 	 * @param age
